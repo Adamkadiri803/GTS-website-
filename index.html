@@ -14,7 +14,27 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+/* GALLERY DESIGN */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
 
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
 body {
   background: #0d0d0d;
   color: #fff;
